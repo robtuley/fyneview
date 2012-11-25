@@ -1,0 +1,160 @@
+/* reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+body {
+ line-height:1;
+}
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+ display:block;
+}
+nav ul {
+ list-style:none;
+}
+blockquote, q {
+ quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+a {
+ margin:0;
+ padding:0;
+ border:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+mark {
+ background-color:#ff9;
+ color:#000;
+ font-style:italic;
+ font-weight:bold;
+}
+del {
+ text-decoration:line-through;
+}
+abbr[title], dfn[title] {
+ border-bottom:1px dotted #000;
+ cursor:help;
+}
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+hr {
+ display:block;
+ height:1px;
+ border:0;
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+input, select {
+ vertical-align:middle;
+}
+
+/* custom */
+body {
+ margin:0 auto;
+ line-height:1.5;
+ max-width:900px;
+ font-size:100%;
+ font-family:Helvetica,Arial,Tahoma,sans-serif;
+}
+a {
+ color:#333399;
+ text-decoration:underline;
+}
+a:hover, a:active, a:focus {
+ text-decoration:none;
+ background-color:#333399;
+ color:white;
+}
+strong {
+ font-weight:bold;
+}
+p {
+ margin:0.5em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+ font-family:Georgia,"Times New Roman",Times,serif;
+ font-weight:normal;
+}
+h1 {
+ font-size:40px;
+ margin:0;
+ background-image:url('loch-fyne.jpg');
+ height:84px;
+ padding:120px 0 0 20px;
+ color:white;
+ border-bottom:10px solid #333;
+ border-bottom-left-radius:20px;
+ border-bottom-right-radius:20px;
+}
+section {
+ margin:0.5em 0;
+}
+h2 a {
+ font-size:1.5em;
+ border:3px solid #333;
+ border-radius:20px;
+ display:block;
+ background-color:#333;
+ color:white;
+ padding:1em;
+}
+
+ol,ul {
+ margin:0.5em 0;
+ margin-left:2em;
+}
+li {
+ margin:0.3em 0;
+}
+ul li {
+ list-style:square outside;
+}
+ol li {
+ list-style:decimal outside;
+}
+small {
+ font-size:0.8em;
+}
+del {
+ display:none;
+}
+blockquote {
+ padding-left:0.5em;
+ margin-left:0.5em;
+ border-left:1px solid #333;
+}
+
+/* print */
+@media print {
+}
