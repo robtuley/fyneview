@@ -54,6 +54,9 @@ section div {
  border-bottom-left-radius:20px;
  border-bottom-right-radius:20px;
 }
+section div a {
+ color:white;
+}
 section div p,section div ul,section div h3 {
  margin:1em;
 }
