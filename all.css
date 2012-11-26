@@ -120,6 +120,15 @@ h1 {
 section {
  margin:0.5em 0;
 }
+.content {
+ height:0;
+ overflow:hidden;
+}
+
+
+
+
+
 h2 a {
  font-size:1.5em;
  border:3px solid #333;
