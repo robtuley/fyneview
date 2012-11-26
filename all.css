@@ -102,7 +102,7 @@ strong {
 p {
  margin:0.5em 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3 {
  font-family:Georgia,"Times New Roman",Times,serif;
  font-weight:normal;
 }
@@ -120,15 +120,16 @@ h1 {
 section {
  margin:0.5em 0;
 }
-.content {
+section div {
  height:0;
  overflow:hidden;
+ background-color:#333;
+ border-bottom-left-radius:20px;
+ border-bottom-right-radius:20px;
 }
-
-
-
-
-
+iframe {
+ margin:1em 2%;
+}
 h2 a {
  font-size:1.5em;
  border:3px solid #333;
@@ -138,31 +139,11 @@ h2 a {
  color:white;
  padding:1em;
 }
+.open h2 a {
+ border-bottom-left-radius:0;
+ border-bottom-right-radius:0;
+}
 
-ol,ul {
- margin:0.5em 0;
- margin-left:2em;
-}
-li {
- margin:0.3em 0;
-}
-ul li {
- list-style:square outside;
-}
-ol li {
- list-style:decimal outside;
-}
-small {
- font-size:0.8em;
-}
-del {
- display:none;
-}
-blockquote {
- padding-left:0.5em;
- margin-left:0.5em;
- border-left:1px solid #333;
-}
 
 /* print */
 @media print {

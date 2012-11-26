@@ -9,8 +9,10 @@
   var dom=document.getElementById(id);
   if('auto'==dom.style.height){
    dom.style.height = 0;
+   dom.parentNode.className = 'closed';
   }else{
    dom.style.height = 'auto';
+   dom.parentNode.className = 'open';
   }
  };
  </script>
@@ -21,20 +23,20 @@
 
 <section>
  <h2><a href="javascript:showHide('map');">How to get there</a></h2>
- <div class=content id=map>
+ <div id=map>
   <p>this is the map</p>
  </div> 
 </section>
 
 <section>
  <h2><a href="javascript:showHide('calendar')">Calendar</a></h2>
- <div class=content id=calendar>
-  <p>this is the calendar</p>
+ <div id=calendar>
+  <iframe src="http://www.google.com/calendar/embed?src=openknot.com_rsvurm723m1vregocrg4u6kgug%40group.calendar.google.com&ctz=Europe/London" style="border: 0" width="96%" height="600" frameborder="0" scrolling="no"></iframe>
  </div></section>
 
 <section>
  <h2><a href="javascript:showHide('instructions')">Instructions</a></h2>
- <div class=content id=instructions>
+ <div id=instructions>
   <p>these are the instructions</p>
  </div>
 </section>
