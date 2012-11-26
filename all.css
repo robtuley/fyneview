@@ -1,85 +1,7 @@
-/* reset */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, dialog, figure, footer, header,
-hgroup, menu, nav, section,
-time, mark, audio, video {
- margin:0;
- padding:0;
- border:0;
- outline:0;
- font-size:100%;
- vertical-align:baseline;
- background:transparent;
-}
-body {
- line-height:1;
-}
 article, aside, dialog, figure, footer, header,
 hgroup, nav, section {
  display:block;
 }
-nav ul {
- list-style:none;
-}
-blockquote, q {
- quotes:none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
- content:'';
- content:none;
-}
-a {
- margin:0;
- padding:0;
- border:0;
- font-size:100%;
- vertical-align:baseline;
- background:transparent;
-}
-ins {
- background-color:#ff9;
- color:#000;
- text-decoration:none;
-}
-mark {
- background-color:#ff9;
- color:#000;
- font-style:italic;
- font-weight:bold;
-}
-del {
- text-decoration:line-through;
-}
-abbr[title], dfn[title] {
- border-bottom:1px dotted #000;
- cursor:help;
-}
-table {
- border-collapse:collapse;
- border-spacing:0;
-}
-hr {
- display:block;
- height:1px;
- border:0;
- border-top:1px solid #cccccc;
- margin:1em 0;
- padding:0;
-}
-input, select {
- vertical-align:middle;
-}
-
-/* custom */
 body {
  margin:0 auto;
  line-height:1.5;
@@ -102,9 +24,13 @@ strong {
 p {
  margin:0.5em 0;
 }
-h1,h2,h3 {
+h1,h2 {
  font-family:Georgia,"Times New Roman",Times,serif;
  font-weight:normal;
+}
+h1,h2,h3 {
+ margin:0;
+ font-size:100%;
 }
 h1 {
  font-size:40px;
@@ -122,10 +48,14 @@ section {
 }
 section div {
  height:0;
+ color:white;
  overflow:hidden;
  background-color:#333;
  border-bottom-left-radius:20px;
  border-bottom-right-radius:20px;
+}
+section div p,section div ul,section div h3 {
+ margin:1em;
 }
 iframe {
  margin:1em 2%;
@@ -142,8 +72,8 @@ h2 a {
 .open h2 a {
  border-bottom-left-radius:0;
  border-bottom-right-radius:0;
+ border-bottom:1px solid white;
 }
-
 
 /* print */
 @media print {
