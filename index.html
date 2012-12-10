@@ -6,6 +6,7 @@
  <meta name=viewport content="width=device-width,initial-scale=1.0">
 
  <link rel=stylesheet href=all.css>
+ <script src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=en-gb"></script>
  <script>
  function showHide(id){
   var dom=document.getElementById(id);
@@ -16,7 +17,22 @@
    dom.style.height = 'auto';
    dom.parentNode.className = 'open';
    window.location.hash = id;
+   if('map'==id){
+     createMap();
+   }
   }
+ }; 
+ var map = false;        
+ function createMap(){
+  if (map) return true;
+  map = new Microsoft.Maps.Map(document.getElementById('bmap'),{
+   credentials:'AjFeIL-KtCsYcV3PeyT6O_m0GQUpJSJjJrp3ZjFq-_vDKTmBonjVEDZtINJSW3sa',
+   center: new Microsoft.Maps.Location(56.158446,-5.097147),
+   zoom: 12,
+   mapTypeId:Microsoft.Maps.MapTypeId.ordnanceSurvey,
+   enableSearchLogo:false
+  });
+  map.entities.push(new Microsoft.Maps.Pushpin(map.getCenter()));
  };
  </script>
 </head>
@@ -27,9 +43,8 @@
 <section>
  <h2><a href="javascript:showHide('map');">Where is it?</a></h2>
  <div id=map>
-  <p>Fyne View, Strachur (<a href=#>view map</a>)</p>
-  <iframe width="96%" height="400" frameborder="0" 
-          scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Strachur&amp;aq=0&amp;oq=strachur&amp;sll=52.8382,-2.327815&amp;sspn=5.921091,14.128418&amp;ie=UTF8&amp;hq=&amp;hnear=Strachur,+Argyll+and+Bute,+United+Kingdom&amp;ll=56.169345,-5.06458&amp;spn=0.085256,0.220757&amp;t=m&amp;z=12&amp;output=embed"></iframe>
+  <div id=bmap></div>
+  <p>Fyne View, Strachur, PA27 8BX</p>
  </div> 
 </section>
 
