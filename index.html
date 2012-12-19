@@ -9,12 +9,18 @@
  <link rel=stylesheet href=all.css>
  <script src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=en-gb"></script>
  <script>
+ var OPENED_ID = false;
  function showHide(id){
+  if (OPENED_ID!=id && false!==OPENED_ID){
+   showHide(OPENED_ID);
+   OPENED_ID = false;
+  }
   var dom=document.getElementById(id);
   if('block'==dom.style.display){
    dom.style.display = 'none';
    dom.parentNode.className = 'closed';
   }else{
+   OPENED_ID = id;
    dom.style.display = 'block';
    dom.parentNode.className = 'open';
    window.location.hash = id;
