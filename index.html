@@ -10,11 +10,11 @@
  <script>
  function showHide(id){
   var dom=document.getElementById(id);
-  if('auto'==dom.style.height){
-   dom.style.height = 0;
+  if('block'==dom.style.display){
+   dom.style.display = 'none';
    dom.parentNode.className = 'closed';
   }else{
-   dom.style.height = 'auto';
+   dom.style.display = 'block';
    dom.parentNode.className = 'open';
    window.location.hash = id;
    if('map'==id){

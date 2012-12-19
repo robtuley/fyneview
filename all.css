@@ -47,7 +47,7 @@ section {
  margin:0.5em 0;
 }
 section > div {
- height:0;
+ display:none;
  color:white;
  overflow:hidden;
  background-color:#333;
